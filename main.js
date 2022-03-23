@@ -78,17 +78,22 @@ function up()
 {
 	//Define function to move the car upward
 	if(greencar_y >=0) {
-		greencar_y = greencar_y = 10;
-		console.log("When up arrow is pressed, x =" + greencar_x " | y = " +greencar_y)
+		greencar_y = greencar_y - 10;
+		console.log("When up arrow is pressed, x = " + greencar_x + " | y = " +greencar_y);
+		uploadBackground();
+		uploadgreencar();
 	}
 }
 
 function down()
 {
 	//Define function to move the car downward
-	if(greencar_y >=0) {
-		greencar_y = greencar_y = 10;
-		console.log("When down arrow is pressed, x =" + greencar_x " | y = " +greencar_y)
+	if(greencar_y <=300) {
+		greencar_y = greencar_y + 10;
+		console.log("When down arrow is pressed, x =" + greencar_x + " | y = " +greencar_y);
+		uploadBackground();
+		uploadgreencar();
+    }
 }
 
 function left()
@@ -96,7 +101,10 @@ function left()
 	//Define function to move the car left side
 	if(greencar_y >=0) {
 		greencar_y = greencar_y = 10;
-		console.log("When left arrow is pressed, x =" + greencar_x " | y = " +greencar_y)
+		console.log("When left arrow is pressed, x =" + greencar_x + " | y = " +greencar_y);
+		uploadBackground();
+		uploadgreencar();
+    }
 }
 
 function right()
@@ -104,5 +112,8 @@ function right()
 	//Define function to move the car right side
 	if(greencar_y >=0) {
 		greencar_y = greencar_y = 10;
-		console.log("When right arrow is pressed, x =" + greencar_x " | y = " +greencar_y)
+		console.log("When right arrow is pressed, x =" + greencar_x + " | y = " +greencar_y);
+		uploadBackground();
+		uploadgreencar();
+	}	
 }
